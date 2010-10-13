@@ -17,7 +17,7 @@ h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
 q:before,q:after{content:'';}
 abbr,acronym{border:0;}
 /* HTML 5 for older browsers */
-article,section,nav,footer{display:block;margin:0;padding:0;width:100%;}
+address,article,section,nav,footer{display:block;margin:0;padding:0;width:100%;}
 
 body {
 	background-color: #053359;
@@ -28,7 +28,6 @@ body {
 
 a {
 	color: #fff;
-	
 }
 
 .content {
@@ -49,9 +48,16 @@ a {
 .tagline {
 	color: rgb(243, 124, 55);
 	font: 18px "B733-DecoRegular","Helvetic Neue","Helvetica",sans-serif;
+	margin-bottom: 11px;
 }
 
 address span {
 	display: block;
-	margin: .5em 0;
+	line-height: 20px;
+}
+
+address img {
+	vertical-align: top;
+	margin-left: -20px;
+	margin-right: 4px;
 }
