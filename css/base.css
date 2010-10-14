@@ -35,6 +35,13 @@ a {
 	color: #fff;
 }
 
+a:hover {
+	text-shadow: 0 0 10px rgb(0, 153, 255);
+	transition:         text-shadow 150ms ease;
+	-webkit-transition: text-shadow 150ms ease;
+	-moz-transition:    text-shadow 150ms ease;
+}
+
 .content {
 	left: 50%;
 	margin-left: -400px;
