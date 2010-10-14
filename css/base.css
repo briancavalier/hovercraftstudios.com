@@ -18,9 +18,14 @@ q:before,q:after{content:'';}
 abbr,acronym{border:0;}
 /* HTML 5 for older browsers */
 address,article,section,nav,footer{display:block;margin:0;padding:0;width:100%;}
+/* Make body background gradients work */
+html, body {height: 100%;}
 
 body {
+	background-repeat: no-repeat;
 	background-color: #053359;
+	background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 1000, from(#053359), to(#032442));
+	background-image: -moz-radial-gradient(center 45deg, circle closest-side, #053359 0, #032442 1000px);
 	color: #fff;
 	font-family: "Helvetica Neueu", "Helvetica", "Arial", sans-serif;
 	font-size: 11px;
