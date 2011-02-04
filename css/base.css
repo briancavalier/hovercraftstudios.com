@@ -1,10 +1,16 @@
+/*
+	New Bulletproof font-face, a la
+	http://www.fontspring.com/blog/the-new-bulletproof-font-face-syntax
+*/
 @font-face {
 	font-family: 'B733-DecoRegular';
-	src: url('fonts/b733-deco-regular-webfont.eot');
-	src: local('☺'), url('fonts/b733-deco-regular-webfont.woff') format('woff'), url('fonts/b733-deco-regular-webfont.ttf') format('truetype'), url('fonts/b733-deco-regular-webfont.svg#webfontH9pO81ke') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
+	src: url('fonts/b733-deco-regular-webfont.eot#') format('eot'), 
+	     url('fonts/b733-deco-regular-webfont.woff') format('woff'), 
+	     url('fonts/b733-deco-regular-webfont.ttf')  format('truetype'),
+	     url('fonts/b733-deco-regular-webfont.svg#webfontH9pO81ke') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
 
 /* YUI Reset */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
@@ -64,11 +70,47 @@ a:hover {
 }
 
 address span {
+	display: block;
+	float: left;
 	line-height: 20px;
 	margin-right: 10px;
+	padding-left: 20px;
 }
 
-address img {
-	vertical-align: top;
-	margin-right: 4px;
+.email {
+	background: transparent url(../im/icon-email.png) no-repeat 0 0;
+}
+.tel {
+	background: transparent url(../im/icon-phone.png) no-repeat 0 0;
+}
+.twitter {
+	background: transparent url(../im/icon-twitter.png) no-repeat 0 0;
+}
+
+@media screen and (max-device-width: 600px) {
+	body {
+		font-size: 26px;
+	}
+	
+	.content {
+		top: 30%;
+	}
+	
+	.tagline {
+		font: 52px "B733-DecoRegular","Helvetica Neue","Helvetica",sans-serif;
+		line-height: 1.25em;
+		margin: 1em 0 1em;
+	}
+
+	address span {
+		float: none;
+		line-height: 48px;
+		background-size: 32px;
+		background-position-y: 50% !important;
+		padding-left: 40px;
+	}
+}
+
+address .org {
+	padding-left: 0;
 }
